@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Brain out</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    
+    
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+    <meta charset="utf-8">
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBmU9IA_zfJ47uJoD3YUO1Bz_N8894rFBA",
+        authDomain: "brain-out-1654f.firebaseapp.com",
+        databaseURL: "https://brain-out-1654f.firebaseio.com",
+        projectId: "brain-out-1654f",
+        storageBucket: "brain-out-1654f.appspot.com",
+        messagingSenderId: "1076747736931",
+        appId: "1:1076747736931:web:300a247ab3f8d2d676e556"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="effect">
+  
+    
+    <script src="Form.js"></script>
+    <script src="Game.js"></script>
+    <script src="Questions.js"></script>
+  <script src="sketch.js"></script>
+  <div id="quiz"></div>
+<button id="submit">Get Results</button>
+<div id="results"></div>
+  
+</body>
+</html>
